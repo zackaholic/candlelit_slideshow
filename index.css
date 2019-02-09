@@ -1,0 +1,52 @@
+body {
+  background-color: #000;
+  text-align: center;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 100px 500px 1fr;
+  grid-template-columns: 1fr 500px 1fr;
+}
+
+.image {
+  grid-area: 2 / 2 / 2 / 2;
+  width: 100%;
+  height: auto;
+  z-index: -1;
+}
+
+.vignette {
+  grid-area: 2 / 2 / 2 / 2;
+  background: radial-gradient( circle, transparent 20%, black 100%), rgba(255, 255, 255, 0.1);
+}
+
+
+/////////////////////////////////
+
+.controls {
+  display: grid;
+  grid-template-rows: 100px 300px;
+  grid-template-columns: 200px 200px;
+  text-align: center;
+}
+
+canvas {
+  width: 600px;
+  height: 200px;
+  border: 1px solid black;
+  background-color: #123;
+}
+
+input {
+  margin-top: 10px;
+}
+
+.range-label {
+  color: #d0d4d8;  
+}
+
+.minor-a, .minor-s, .major-a, .major-s {
+  width: 610px;
+  text-align: right;
+}
